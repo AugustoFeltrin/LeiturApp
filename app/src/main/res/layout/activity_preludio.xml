@@ -1,19 +1,61 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/degrade"
     tools:context=".Preludio">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Funciona"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Prelúdio"
+        android:textColor="#F0ECDA"
+        android:textSize="70sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/paragrafo1"
+        android:layout_width="328dp"
+        android:layout_height="325dp"
+        android:allowUndo="true"
+        android:fontFamily="@font/akshar"
+        android:layoutDirection="rtl"
+        android:text="A história de Fahrenheit 451 se passa em um futuro distópico onde o governo proíbe livros, considerados perigosos por incitar pensamento crítico. Em vez de apagar incêndios, os bombeiros os queimam para manter a sociedade alienada. Guy Montag, o protagonista, é um desses bombeiros, vivendo uma vida rotineira e conformada, sem questionar seu papel. "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/paragrafo2"
+        android:layout_width="328dp"
+        android:layout_height="325dp"
+        android:allowUndo="true"
+        android:fontFamily="@font/akshar"
+        android:text="No entanto, tudo muda quando ele conhece Clarisse, sua jovem vizinha, que o faz refletir sobre sua vida e valores, despertando uma curiosidade que ele nunca sentira antes."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
