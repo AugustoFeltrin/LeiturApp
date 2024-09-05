@@ -3,5 +3,6 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/akshar</item>
         <item>@font/akshar_light</item>
+        <item>@font/big_shoulders_text_thin</item>
     </array>
 </resources>
