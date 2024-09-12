@@ -7,6 +7,7 @@
     android:background="@drawable/fundo"
     tools:context=".Preludio">
 
+
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -55,7 +56,7 @@
         app:srcCompat="@drawable/engrenagem" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/cidade"
         android:layout_width="420dp"
         android:layout_height="316dp"
         android:scaleType="centerCrop"
@@ -64,5 +65,17 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cidade"
         tools:layout_editor_absoluteX="-4dp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

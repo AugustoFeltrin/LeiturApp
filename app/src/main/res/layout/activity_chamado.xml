@@ -1,0 +1,44 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".Chamado">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akshar"
+        android:shadowRadius="5"
+        android:text="Chamado"
+        android:textColor="#F0ECDA"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/paragrafo1"
+        android:layout_width="337dp"
+        android:layout_height="384dp"
+        android:allowUndo="true"
+        android:fontFamily="@font/akshar"
+        android:justificationMode="inter_word"
+        android:layoutDirection="rtl"
+        android:text="À medida que suas dúvidas aumentam, Montag começa a roubar livros de incêndios que deveria realizar, escondendo-os em sua casa. Sua esposa, Mildred, está imersa na sociedade superficial, entretida por telas interativas, e não compreende o conflito interno de Montag. Durante uma chamada para queimar livros, Montag presencia uma mulher preferindo morrer queimando junto com seus livros, o que intensifica sua crise de consciência. Ele começa a ler os livros que escondeu, buscando entender o que há de tão perigoso neles que justifique sua destruição."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
