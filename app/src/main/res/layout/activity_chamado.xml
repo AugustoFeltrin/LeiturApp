@@ -13,16 +13,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/akshar"
         android:shadowRadius="5"
-        android:text="Chamado"
+        android:text="Chamado do Herói"
         android:textColor="#F0ECDA"
-        android:textSize="70sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <TextView
         android:id="@+id/paragrafo1"
@@ -32,13 +32,53 @@
         android:fontFamily="@font/akshar"
         android:justificationMode="inter_word"
         android:layoutDirection="rtl"
-        android:text="À medida que suas dúvidas aumentam, Montag começa a roubar livros de incêndios que deveria realizar, escondendo-os em sua casa. Sua esposa, Mildred, está imersa na sociedade superficial, entretida por telas interativas, e não compreende o conflito interno de Montag. Durante uma chamada para queimar livros, Montag presencia uma mulher preferindo morrer queimando junto com seus livros, o que intensifica sua crise de consciência. Ele começa a ler os livros que escondeu, buscando entender o que há de tão perigoso neles que justifique sua destruição."
+        android:text=" Montag começa a roubar livros dos incêndios que deveria realizar e os esconde em casa. Sua esposa, Mildred, está profundamente envolvida na sociedade superficial e passa seu tempo entretida por telas interativas, sem compreender o conflito interno que Montag está enfrentando."
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/paragrafo2"
+        android:layout_width="196dp"
+        android:layout_height="351dp"
+        android:allowUndo="true"
+        android:fontFamily="@font/akshar"
+        android:justificationMode="inter_word"
+        android:layoutDirection="rtl"
+        android:text="Durante uma chamada para queimar livros, Montag testemunha uma mulher preferindo morrer junto com seus livros, o que agrava sua crise de consciência. Ele decide ler os livros que escondeu, buscando entender o que há de tão perigoso neles que justifique sua destruição."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="249dp"
+        android:layout_height="429dp"
+        android:layout_marginStart="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/livro" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

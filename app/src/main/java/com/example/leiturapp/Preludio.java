@@ -14,11 +14,19 @@ public class Preludio extends AppCompatActivity {
         setContentView(R.layout.activity_preludio);
 
         Button btnNext = findViewById(R.id.btn_next);
-
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Preludio.this, Chamado.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnBack = findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Preludio.this, MainActivity.class);
                 startActivity(intent);
             }
         });

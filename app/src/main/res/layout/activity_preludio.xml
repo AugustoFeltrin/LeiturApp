@@ -12,7 +12,6 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:fontFamily="@font/akshar"
         android:shadowRadius="5"
         android:text="Prelúdio"
@@ -77,5 +76,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
