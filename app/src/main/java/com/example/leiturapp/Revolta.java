@@ -6,28 +6,19 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Chamado extends AppCompatActivity {
+public class Revolta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chamado);
+        setContentView(R.layout.activity_revolta);
 
-        Button btnNext = findViewById(R.id.btn_next);
         Button btnBack = findViewById(R.id.btn_back);
-
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Chamado.this, Busca.class);
-                startActivity(intent);
-            }
-        });
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Chamado.this, Preludio.class);
+                Intent intent = new Intent(Revolta.this, Busca.class);
                 startActivity(intent);
             }
         });

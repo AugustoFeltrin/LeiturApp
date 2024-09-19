@@ -4,7 +4,7 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pag2"
+    android:background="@drawable/pag5"
     tools:context=".Preludio">
 
 
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/akshar"
         android:shadowRadius="5"
-        android:text="Sociedade Distopica"
+        android:text="Revolta e Esperança"
         android:textColor="#F0ECDA"
         android:textSize="48sp"
         android:textStyle="bold"
@@ -33,7 +33,7 @@
         android:fontFamily="@font/akshar"
         android:justificationMode="inter_word"
         android:layoutDirection="rtl"
-        android:text="A história se passa em um futuro distópico onde o governo proíbe livros para evitar o pensamento crítico. Guy Montag, um bombeiro cuja função é queimar livros, vive conformado com seu papel até conhecer Clarisse, uma jovem vizinha curiosa. Ao interagir com ela, Montag começa a perceber a futilidade da sua rotina e o vazio da sociedade em que está inserido. À medida que sua mente se abre para novas ideias, ele se vê em uma luta interna entre a conformidade e a busca por liberdade e conhecimento. "
+        android:text="A situação de Montag se agrava quando seu chefe, o Capitão Beatty, descobre suas atividades ilegais e tenta manipulá-lo para renunciar a seus ideais. Em um momento de desespero e revolta, Montag acaba matando Beatty com um lança-chamas. Agora considerado um fugitivo, ele escapa para salvar sua vida e se junta a um grupo de rebeldes intelectuais que memorizam livros para preservar seu conteúdo. Juntos, eles testemunham a destruição da cidade por uma guerra nuclear, mas mantêm a esperança de reconstruir uma sociedade mais justa e consciente."
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,19 +52,4 @@
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="136dp"
-        android:layout_height="711dp"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

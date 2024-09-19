@@ -12,6 +12,8 @@
         android:theme="@style/Theme.LeiturApp"
         tools:targetApi="31">
 
+        <activity android:name=".Revolta"  />
+        <activity android:name=".Busca"  />
         <activity android:name=".Preludio" />
         <activity android:name=".Chamado"/>
 
