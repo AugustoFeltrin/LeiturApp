@@ -16,6 +16,7 @@
         <activity android:name=".Busca"  />
         <activity android:name=".Preludio" />
         <activity android:name=".Chamado"/>
+        <activity android:name=".Personagem"/>
 
         <activity
             android:name=".MainActivity"

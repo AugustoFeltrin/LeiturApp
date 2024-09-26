@@ -1,0 +1,222 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5A3E36"
+    tools:context=".Personagem">
+
+    <LinearLayout
+        android:id="@+id/btn_montag"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#7D4E3B"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_montag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Guy Montag"
+            android:textColor="#FFF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_montag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Protagonista da obra, ele é um bombeiro que, em vez de apagar incêndios, os inicia para queimar livros, uma prática normal em sua sociedade. No entanto, ao longo da trama, ele passa a questionar sua vida e seu papel na opressão, após perceber o vazio que sente. Sua transformação começa quando ele se conecta com pessoas que desafiam as normas e buscam conhecimento, levando-o a lutar contra a ignorância e a repressão. Montag é impulsivo e inicialmente tem dificuldade de pensar por si mesmo, mas sua determinação em encontrar sentido na vida o guia em sua jornada."
+        android:textSize="16sp"
+        android:textColor="#F0ECDA"
+        android:padding="8dp"
+        android:background="#7D4E3B"
+        app:layout_constraintTop_toBottomOf="@+id/btn_montag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/btn_mildred"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#7D4E3B"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_montag">
+
+        <TextView
+            android:id="@+id/tv_mildred"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Mildred Montag"
+            android:textColor="#FFF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_mildred"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Esposa de Montag, Mildred é uma personagem apática, profundamente consumida pela tecnologia. Ela passa a maior parte do tempo assistindo televisão em telas interativas que dominam sua casa, recusando-se a interagir emocionalmente com o marido. Seu distanciamento emocional e sua tentativa fracassada de suicídio, que ela ignora completamente, evidenciam uma dor interna profunda. Mildred simboliza a alienação e a superficialidade da sociedade de Fahrenheit 451."
+        android:textSize="16sp"
+        android:textColor="#F0ECDA"
+        android:padding="8dp"
+        android:background="#7D4E3B"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mildred"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/btn_beatty"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#7D4E3B"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_mildred">
+
+        <TextView
+            android:id="@+id/tv_beatty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Capitão Beatty"
+            android:textColor="#FFF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_beatty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Líder dos bombeiros e antagonista da trama, Beatty é um homem complexo. Apesar de ser muito culto e conhecedor dos livros, ele os despreza e persegue quem os lê. Seu conhecimento profundo sobre literatura o torna um personagem astuto e manipulador, capaz de prever as ações de Montag. Beatty é uma figura paradoxal que representa tanto a ameaça da autoridade quanto a contradição do próprio sistema, já que ele condena o que entende."
+        android:textSize="16sp"
+        android:textColor="#F0ECDA"
+        android:padding="8dp"
+        android:background="#7D4E3B"
+        app:layout_constraintTop_toBottomOf="@+id/btn_beatty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/btn_faber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#7D4E3B"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_beatty">
+
+        <TextView
+            android:id="@+id/tv_faber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Professor Faber"
+            android:textColor="#FFF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_faber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Um ex-professor de inglês, Faber vive escondido e tem medo do regime que proíbe os livros. Ele sente remorso por não ter se posicionado contra a repressão quando teve a oportunidade. Apesar de reconhecer sua covardia, Faber desempenha um papel importante na rebelião de Montag, ajudando-o a entender o valor dos livros e incentivando-o a agir com mais coragem. Faber é o símbolo daqueles que, mesmo em tempos de opressão, preservam o conhecimento em segredo. "
+        android:textSize="16sp"
+        android:textColor="#F0ECDA"
+        android:padding="8dp"
+        android:background="#7D4E3B"
+        app:layout_constraintTop_toBottomOf="@+id/btn_faber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/btn_clarisse"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#7D4E3B"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_faber">
+
+        <TextView
+            android:id="@+id/tv_clarisse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Clarisse McClellan"
+            android:textColor="#FFF6E5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_clarisse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Clarisse é uma jovem cujas atitudes e curiosidade fazem dela uma exceção na sociedade conformista. Ela inspira Montag a ver o mundo de forma diferente, levando-o a questionar sua vida e o papel da sociedade. Clarisse, com seu comportamento despreocupado e suas reflexões sobre a natureza, representa a liberdade de pensamento e a busca pela verdadeira felicidade, características que a tornam uma estranha em um mundo que rejeita a individualidade. "
+        android:textSize="16sp"
+        android:textColor="#F0ECDA"
+        android:padding="8dp"
+        android:background="#7D4E3B"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clarisse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

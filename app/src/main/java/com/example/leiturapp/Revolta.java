@@ -14,6 +14,7 @@ public class Revolta extends AppCompatActivity {
         setContentView(R.layout.activity_revolta);
 
         Button btnBack = findViewById(R.id.btn_back);
+        Button btnNext = findViewById(R.id.btn_next);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,6 +23,13 @@ public class Revolta extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Revolta.this, Personagem.class);
+                startActivity(intent);
+            }
+        });
     }
 }
-

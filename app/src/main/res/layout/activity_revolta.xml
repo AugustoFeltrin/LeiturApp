@@ -7,7 +7,6 @@
     android:background="@drawable/pag5"
     tools:context=".Preludio">
 
-
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -28,7 +27,7 @@
     <TextView
         android:id="@+id/paragrafo1"
         android:layout_width="341dp"
-        android:layout_height="336dp"
+        android:layout_height="404dp"
         android:allowUndo="true"
         android:fontFamily="@font/akshar"
         android:justificationMode="inter_word"
@@ -40,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <Button
         android:id="@+id/btn_back"
@@ -52,4 +51,18 @@
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
