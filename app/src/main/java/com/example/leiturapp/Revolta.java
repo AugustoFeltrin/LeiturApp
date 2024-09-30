@@ -6,31 +6,30 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Preludio extends AppCompatActivity {
+public class Revolta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_preludio);
+        setContentView(R.layout.activity_revolta);
 
+        Button btnBack = findViewById(R.id.btn_back);
         Button btnNext = findViewById(R.id.btn_next);
-        Button btnBackMain = findViewById(R.id.btn_back);
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Preludio.this, Chamado.class);
+                Intent intent = new Intent(Revolta.this, Busca.class);
                 startActivity(intent);
             }
         });
 
-        btnBackMain.setOnClickListener(new View.OnClickListener() {
+        btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Preludio.this, MainActivity.class);
+                Intent intent = new Intent(Revolta.this, Personagem.class);
                 startActivity(intent);
             }
         });
     }
 }
-

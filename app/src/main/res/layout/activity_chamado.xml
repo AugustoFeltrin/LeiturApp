@@ -1,0 +1,86 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pag3"
+    tools:context=".Chamado">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akshar"
+        android:shadowRadius="5"
+        android:text="Chamado do Herói"
+        android:textColor="#F0ECDA"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/paragrafo1"
+        android:layout_width="337dp"
+        android:layout_height="384dp"
+        android:allowUndo="true"
+        android:fontFamily="@font/akshar"
+        android:justificationMode="inter_word"
+        android:layoutDirection="rtl"
+        android:text="Montag começa a roubar livros dos incêndios que deveria realizar e os esconde em casa. Sua esposa, Mildred, está profundamente envolvida na sociedade superficial e passa seu tempo entretida por telas interativas, sem compreender o conflito interno que seu mariado está enfrentando."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/paragrafo2"
+        android:layout_width="333dp"
+        android:layout_height="312dp"
+        android:allowUndo="true"
+        android:fontFamily="@font/akshar"
+        android:justificationMode="inter_word"
+        android:layoutDirection="rtl"
+        android:text="Durante uma chamada para queimar livros, ele testemunha uma mulher preferindo morrer junto com seus livros, o que agrava sua crise de consciência. Ele decide ler os livros que escondeu, buscando entender o que há de tão perigoso neles que justifique sua destruição."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <Button
+    android:id="@+id/btn_back"
+    android:layout_width="136dp"
+    android:layout_height="711dp"
+    android:layout_marginTop="16dp"
+    android:background="@android:color/transparent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.058"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

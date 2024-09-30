@@ -4,8 +4,8 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pag2"
-    tools:context=".Preludio">
+    android:background="@drawable/pag4"
+    tools:context=".Busca">
 
 
     <TextView
@@ -14,33 +14,33 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/akshar"
         android:shadowRadius="5"
-        android:text="Sociedade Distopica"
+        android:text="Busca por Sabedoria"
         android:textColor="#F0ECDA"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <TextView
         android:id="@+id/paragrafo1"
         android:layout_width="341dp"
-        android:layout_height="336dp"
+        android:layout_height="400dp"
         android:allowUndo="true"
         android:fontFamily="@font/akshar"
         android:justificationMode="inter_word"
         android:layoutDirection="rtl"
-        android:text="A história se passa em um futuro distópico onde o governo proíbe livros para evitar o pensamento crítico. Guy Montag, um bombeiro cuja função é queimar livros, vive conformado com seu papel até conhecer Clarisse, uma jovem vizinha curiosa. Ao interagir com ela, Montag começa a perceber a futilidade da sua rotina e o vazio da sociedade em que está inserido. À medida que sua mente se abre para novas ideias, ele se vê em uma luta interna entre a conformidade e a busca por liberdade e conhecimento. "
+        android:text="Montag busca ajuda de Faber, um ex-professor de literatura, que o orienta sobre a importância dos livros e a preservação do conhecimento. Juntos, eles elaboram um plano para subverter o sistema, reproduzindo e distribuindo livros de forma clandestina. À medida que Montag se torna mais rebelde, ele se afasta de sua esposa e da sociedade conformista. Durante um encontro em que lê poesia para Mildred e suas amigas, elas reagem com desconforto e rejeição, mostrando a profundidade da alienação em que vivem. "
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.498" />
 
     <Button
         android:id="@+id/btn_back"
@@ -64,7 +64,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.457" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
