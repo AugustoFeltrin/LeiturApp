@@ -27,12 +27,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         VideoView videoView = findViewById(R.id.videoView);
-        videoView.setVideoURI(Uri.parse(https://www.youtube.com/watch?v=dCRUuxaKTRM));
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.background), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        videoView.setVideoURI(Uri.parse("https://www.youtube.com/watch?v=dCRUuxaKTRM"));
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Ocultar o TextView
+                textView.setVisibility(View.GONE);
+
+                // Mostrar e reproduzir o VideoView
+                videoView.setVisibility(View.VISIBLE);
+                videoView.start();
 
         ImageView solImageView = findViewById(R.id.sol);
         Animation pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);

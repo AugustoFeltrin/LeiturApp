@@ -54,6 +54,7 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:id="@+id/videoView"
+        android:visibility="gone"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="452dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
