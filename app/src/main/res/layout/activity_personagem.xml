@@ -1,4 +1,5 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,10 +12,10 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="#7D4E3B"
+        android:background="@drawable/borda"
         android:clickable="true"
         android:focusable="true"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -23,198 +24,213 @@
 
         <TextView
             android:id="@+id/tv_montag"
-            android:layout_width="300dp"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
             android:fontFamily="@font/akshar"
             android:gravity="center_vertical"
             android:text="Guy Montag"
-            android:textColor="#FFF6E5"
-            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="#3e0807"
+            android:textSize="24sp"
             android:textStyle="bold" />
-    </LinearLayout>
 
-    <TextView
-        android:id="@+id/desc_montag"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="Protagonista que começa como bombeiro incendiário e passa a questionar a sociedade opressora. Tem uma aparência comum, de homem de meia-idade, trabalhador. Inicialmente conformista e impulsivo, mas ao longo da história se torna reflexivo e determinado."
-        android:textSize="16sp"
-        android:textColor="#F0ECDA"
-        android:padding="8dp"
-        android:background="#7D4E3B"
-        app:layout_constraintTop_toBottomOf="@+id/btn_montag"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/btn_mildred"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="#7D4E3B"
-        android:clickable="true"
-        android:focusable="true"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desc_montag">
-
-        <TextView
-            android:id="@+id/tv_mildred"
-            android:layout_width="300dp"
+        <LinearLayout
+            android:id="@+id/layout_desc_montag"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/akshar"
-            android:gravity="center_vertical"
-            android:text="Mildred Montag"
-            android:textColor="#FFF6E5"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/desc_montag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bombeiro responsável por queimar livros em uma sociedade opressora. Ele começa como um homem conformado com as regras, mas ao longo da trama, passa por uma transformação profunda. Montag tem uma aparência comum, de homem trabalhador, mas sua jornada interior revela uma crescente inquietação. Sua personalidade evolui de obediente e impulsiva para reflexiva e rebelde, questionando as normas e buscando liberdade de pensamento."
+                android:textColor="#3e0807"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/desc_mildred"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="Representa a alienação e a superficialidade, sendo a esposa apática de Montag. Fisicamente, é magra e pálida, muitas vezes doente ou distante. Sua personalidade é passiva, obcecada por tecnologia e emocionalmente desconectada."
-        android:textSize="16sp"
-        android:textColor="#F0ECDA"
-        android:padding="8dp"
-        android:background="#7D4E3B"
-        app:layout_constraintTop_toBottomOf="@+id/btn_mildred"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/btn_beatty"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="#7D4E3B"
-        android:clickable="true"
-        android:focusable="true"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desc_mildred">
-
-        <TextView
-            android:id="@+id/tv_beatty"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/akshar"
-            android:gravity="center_vertical"
-            android:text="Capitão Beatty"
-            android:textColor="#FFF6E5"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/desc_beatty"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="Principal antagonista, comandante dos bombeiros e defensor da censura. Aparência robusta e imponente, com traços autoritários. Astuto, culto e manipulador, Beatty tem uma personalidade complexa e paradoxal, desprezando o que entende bem."
-        android:textSize="16sp"
-        android:textColor="#F0ECDA"
-        android:padding="8dp"
-        android:background="#7D4E3B"
-        app:layout_constraintTop_toBottomOf="@+id/btn_beatty"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/btn_faber"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="#7D4E3B"
-        android:clickable="true"
-        android:focusable="true"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desc_beatty">
-
-        <TextView
-            android:id="@+id/tv_faber"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/akshar"
-            android:gravity="center_vertical"
-            android:text="Professor Faber"
-            android:textColor="#FFF6E5"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/desc_faber"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="Ajuda Montag a entender o valor dos livros, representando a sabedoria silenciosa. É um homem mais velho, de aparência frágil e discreta. Medroso, mas inteligente, carrega remorso por sua covardia e busca redenção ajudando Montag."
-        android:textSize="16sp"
-        android:textColor="#F0ECDA"
-        android:padding="8dp"
-        android:background="#7D4E3B"
-        app:layout_constraintTop_toBottomOf="@+id/btn_faber"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/btn_clarisse"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#7D4E3B"
+        android:background="@drawable/borda"
         android:clickable="true"
         android:focusable="true"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desc_faber">
+        app:layout_constraintTop_toBottomOf="@+id/btn_montag">
 
         <TextView
             android:id="@+id/tv_clarisse"
-            android:layout_width="300dp"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_weight="1"
             android:fontFamily="@font/akshar"
             android:gravity="center_vertical"
             android:text="Clarisse McClellan"
-            android:textColor="#FFF6E5"
-            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="#3e0807"
+            android:textSize="24sp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_desc_clarisse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/desc_clarisse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jovem vizinha de Montag, que representa a curiosidade e o questionamento da vida. Tem aparência delicada e jovem, com traços de pureza e naturalidade. É sonhadora, falante e possui uma visão filosófica sobre o mundo, que contrasta com a sociedade."
+                android:textColor="#3e0807"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/desc_clarisse"
+    <LinearLayout
+        android:id="@+id/btn_mildred"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="Inspira Montag a questionar a vida, sendo uma figura de liberdade de pensamento. Jovem de 17 anos, com uma aparência leve, cabelos escuros e olhos curiosos. Curiosa, espontânea e diferente dos demais, ela é alegre e reflexiva"
-        android:textSize="16sp"
-        android:textColor="#F0ECDA"
-        android:padding="8dp"
-        android:background="#7D4E3B"
-        app:layout_constraintTop_toBottomOf="@+id/btn_clarisse"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borda"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_clarisse">
+
+        <TextView
+            android:id="@+id/tv_mildred"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Mildred Montag"
+            android:textAlignment="center"
+            android:textColor="#3e0807"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_desc_mildred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/desc_mildred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Representa a alienação e a superficialidade, sendo a esposa apática de Montag. Fisicamente, é magra e pálida, muitas vezes doente ou distante. Sua personalidade é passiva, obcecada por tecnologia e emocionalmente desconectada"
+                android:textColor="#3e0807"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_beatty"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borda"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mildred">
+
+        <TextView
+            android:id="@+id/tv_beatty"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Capitão Beatty"
+            android:textAlignment="center"
+            android:textColor="#3e0807"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_desc_beatty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/desc_beatty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal antagonista, comandante dos bombeiros e defensor da censura. Aparência robusta e imponente, com traços autoritários. Astuto, culto e manipulador, Beatty tem uma personalidade complexa e paradoxal, desprezando o que entende bem."
+                android:textColor="#3e0807"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_faber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borda"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_beatty">
+
+        <TextView
+            android:id="@+id/tv_faber"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Professor Faber"
+            android:textAlignment="center"
+            android:textColor="#3e0807"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_desc_faber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/desc_faber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Antigo professor que ajuda Montag a confrontar a opressão e a encontrar respostas. Seu físico é frágil, com a aparência de um homem mais velho, cansado, mas sábio. Sua personalidade é inicialmente medrosa, mas cresce em coragem ao longo da narrativa."
+                android:textColor="#3e0807"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

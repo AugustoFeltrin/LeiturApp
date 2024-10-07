@@ -3,59 +3,68 @@ package com.example.leiturapp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Personagem extends AppCompatActivity {
+
+    private LinearLayout btnMontag, layoutDescMontag;
+    private LinearLayout btnClarisse, layoutDescClarisse;
+    private LinearLayout btnMildred, layoutDescMildred;
+    private LinearLayout btnBeatty, layoutDescBeatty;
+    private LinearLayout btnFaber, layoutDescFaber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personagem);
 
-        LinearLayout btnMontag = findViewById(R.id.btn_montag);
-        TextView descMontag = findViewById(R.id.desc_montag);
-        LinearLayout btnMildred = findViewById(R.id.btn_mildred);
-        TextView descMildred = findViewById(R.id.desc_mildred);
-        LinearLayout btnBeatty = findViewById(R.id.btn_beatty);
-        TextView descBeatty = findViewById(R.id.desc_beatty);
-        LinearLayout btnFaber = findViewById(R.id.btn_faber);
-        TextView descFaber = findViewById(R.id.desc_faber);
-        LinearLayout btnClarisse = findViewById(R.id.btn_clarisse);
-        TextView descClarisse = findViewById(R.id.desc_clarisse);
+        btnMontag = findViewById(R.id.btn_montag);
+        layoutDescMontag = findViewById(R.id.layout_desc_montag);
+
+        btnClarisse = findViewById(R.id.btn_clarisse);
+        layoutDescClarisse = findViewById(R.id.layout_desc_clarisse);
+
+        btnMildred = findViewById(R.id.btn_mildred);
+        layoutDescMildred = findViewById(R.id.layout_desc_mildred);
+
+        btnBeatty = findViewById(R.id.btn_beatty);
+        layoutDescBeatty = findViewById(R.id.layout_desc_beatty);
+
+        btnFaber = findViewById(R.id.btn_faber);
+        layoutDescFaber = findViewById(R.id.layout_desc_faber);
 
         btnMontag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toggleVisibility(descMontag);
-            }
-        });
-
-        btnMildred.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toggleVisibility(descMildred);
-            }
-        });
-
-        btnBeatty.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toggleVisibility(descBeatty);
-            }
-        });
-
-        btnFaber.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toggleVisibility(descFaber);
+                toggleVisibility(layoutDescMontag);
             }
         });
 
         btnClarisse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toggleVisibility(descClarisse);
+                toggleVisibility(layoutDescClarisse);
+            }
+        });
+
+        btnMildred.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleVisibility(layoutDescMildred);
+            }
+        });
+
+        btnBeatty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleVisibility(layoutDescBeatty);
+            }
+        });
+
+        btnFaber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toggleVisibility(layoutDescFaber);
             }
         });
     }
@@ -68,5 +77,3 @@ public class Personagem extends AppCompatActivity {
         }
     }
 }
-
-
