@@ -1,60 +1,220 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Preludio"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="31dp">
+    android:background="#5A3E36"
+    tools:context=".Personagem">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="126dp"
-        android:layout_height="143dp"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="107dp"
-        tools:srcCompat="@tools:sample/avatars" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:gravity="top">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="126dp"
-        android:layout_height="143dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="107dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="126dp"
-        android:layout_height="143dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="271dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        <LinearLayout
+            android:id="@+id/btn_montag"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/borda"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="126dp"
-        android:layout_height="143dp"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="271dp"
-        tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/tv_montag"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akshar"
+                android:gravity="center_vertical"
+                android:text="Flme (1966)"
+                android:textAlignment="center"
+                android:textColor="#3e0807"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:letterSpacing="0.5"
-        android:text="Adaptações"
-        android:background="#FFECA1"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="32dp" />
+            <LinearLayout
+                android:id="@+id/layout_desc_montag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
 
-    <VideoView
+                <TextView
+                    android:id="@+id/desc_montag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Bombeiro responsável por queimar livros em uma sociedade opressora. Ele começa como um homem conformado com as regras, mas ao longo da trama, passa por uma transformação profunda. Montag tem uma aparência comum, de homem trabalhador, mas sua jornada interior revela uma crescente inquietação. Sua personalidade evolui de obediente e impulsiva para reflexiva e rebelde, questionando as normas e buscando liberdade de pensamento."
+                    android:textColor="#3e0807"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_clarisse"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borda"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_montag">
+
+            <TextView
+                android:id="@+id/tv_clarisse"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akshar"
+                android:gravity="center_vertical"
+                android:text="Filme (2018)"
+                android:textAlignment="center"
+                android:textColor="#3e0807"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_desc_clarisse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/desc_clarisse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Jovem vizinha de Montag, que representa a curiosidade e o questionamento da vida. Tem aparência delicada e jovem, com traços de pureza e naturalidade. É sonhadora, falante e possui uma visão filosófica sobre o mundo, que contrasta com a sociedade."
+                    android:textColor="#3e0807"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/btn_mildred"
         android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/videoView"
-        android:visibility="gone"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="452dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borda"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clarisse">
+
+            <TextView
+                android:id="@+id/tv_mildred"
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akshar"
+                android:gravity="center_vertical"
+                android:text="História em Quadrinhos"
+                android:textAlignment="center"
+                android:textColor="#3e0807"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_desc_mildred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/desc_mildred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Representa a alienação e a superficialidade, sendo a esposa apática de Montag. Fisicamente, é magra e pálida, muitas vezes doente ou distante. Sua personalidade é passiva, obcecada por tecnologia e emocionalmente desconectada"
+                android:textColor="#3e0807"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_beatty"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borda"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mildred">
+
+        <TextView
+            android:id="@+id/tv_beatty"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akshar"
+            android:gravity="center_vertical"
+            android:text="Jogo"
+            android:textAlignment="center"
+            android:textColor="#3e0807"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_desc_beatty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/desc_beatty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal antagonista, comandante dos bombeiros e defensor da censura. Aparência robusta e imponente, com traços autoritários. Astuto, culto e manipulador, Beatty tem uma personalidade complexa e paradoxal, desprezando o que entende bem."
+                android:textColor="#3e0807"
+                android:textSize="16sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+
+        </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

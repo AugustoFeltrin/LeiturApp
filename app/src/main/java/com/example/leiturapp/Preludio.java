@@ -14,7 +14,7 @@ public class Preludio extends AppCompatActivity {
         setContentView(R.layout.activity_preludio);
 
         Button btnNext = findViewById(R.id.btn_next);
-        Button btnBackMain = findViewById(R.id.btn_back);
+        Button btnBackMain = findViewById(R.id.btnback);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override

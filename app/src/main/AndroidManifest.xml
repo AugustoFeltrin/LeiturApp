@@ -15,6 +15,7 @@
         <activity android:name=".Revolta"  />
         <activity android:name=".Busca"  />
         <activity android:name=".Preludio" />
+        <activity android:name=".Adaptacoes"/>
         <activity android:name=".Chamado"/>
         <activity android:name=".Personagem"/>
 

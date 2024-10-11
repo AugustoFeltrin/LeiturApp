@@ -14,7 +14,7 @@ public class Busca extends AppCompatActivity {
         setContentView(R.layout.activity_busca);
 
         Button btnNext = findViewById(R.id.btn_next);
-        Button btnBack = findViewById(R.id.btn_back);
+        Button btnBack = findViewById(R.id.btnback);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override

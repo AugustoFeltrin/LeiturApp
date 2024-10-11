@@ -13,7 +13,7 @@ public class Revolta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_revolta);
 
-        Button btnBack = findViewById(R.id.btn_back);
+        Button btnBack = findViewById(R.id.btnback);
         Button btnNext = findViewById(R.id.btn_next);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
