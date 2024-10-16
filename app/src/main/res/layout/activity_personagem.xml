@@ -4,8 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5A3E36"
-    tools:context=".Personagem">
+    android:background="@drawable/pag6"
+    tools:context=".Personagem"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="14dp">
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
 
     <ScrollView
         android:layout_width="match_parent"

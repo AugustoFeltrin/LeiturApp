@@ -11,14 +11,14 @@
 
     <ImageView
         android:id="@+id/sol"
-        android:layout_width="183dp"
-        android:layout_height="213dp"
+        android:layout_width="215dp"
+        android:layout_height="243dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintVertical_bias="0.247"
         app:srcCompat="@drawable/sol" />
 
     <Button
@@ -41,7 +41,7 @@
         android:text="Deslize para Utilizar"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="#BCB5B5"
+        android:textColor="#ec8d04"
         android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
