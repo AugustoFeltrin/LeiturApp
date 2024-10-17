@@ -3,6 +3,15 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/akshar</item>
         <item>@font/akshar_light</item>
+        <item>@font/alumni_sans</item>
+        <item>@font/alumni_sans_black</item>
+        <item>@font/amiri</item>
+        <item>@font/bebas_neue</item>
+        <item>@font/big_shoulders_display_bold</item>
+        <item>@font/big_shoulders_text_medium</item>
         <item>@font/big_shoulders_text_thin</item>
+        <item>@font/dorsa</item>
+        <item>@font/stint_ultra_condensed</item>
+        <item>@font/trykker</item>
     </array>
 </resources>
