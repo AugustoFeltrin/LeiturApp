@@ -1,5 +1,6 @@
 package com.example.leiturapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,32 +9,44 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Adaptacoes extends AppCompatActivity {
 
-    private LinearLayout btnMontag, layoutDescMontag;
-    private LinearLayout btnClarisse, layoutDescClarisse;
-    private LinearLayout btnMildred, layoutDescMildred;
-    private LinearLayout btnBeatty, layoutDescBeatty;
-    private Button btnnext;
-    private Button btnback;
+    private LinearLayout layoutDescMontag;
+    private LinearLayout layoutDescClarisse;
+    private LinearLayout layoutDescMildred;
+    private LinearLayout layoutDescBeatty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personagem);
 
-        Button btnNext = findViewById(R.id.btnnext);
         Button btnBack = findViewById(R.id.btnback);
+        Button btnNext = findViewById(R.id.btn_next);
 
-        btnMontag = findViewById(R.id.btn_montag);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Adaptacoes.this, Revolta.class);
+                startActivity(intent);
+            }
+        });
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Adaptacoes.this, Autor.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout btnMontag = findViewById(R.id.btn_montag);
         layoutDescMontag = findViewById(R.id.layout_desc_montag);
-
-        btnClarisse = findViewById(R.id.btn_clarisse);
+        LinearLayout btnClarisse = findViewById(R.id.btn_clarisse);
         layoutDescClarisse = findViewById(R.id.layout_desc_clarisse);
-
-        btnMildred = findViewById(R.id.btn_mildred);
+        LinearLayout btnMildred = findViewById(R.id.btn_mildred);
         layoutDescMildred = findViewById(R.id.layout_desc_mildred);
-
-        btnBeatty = findViewById(R.id.btn_beatty);
+        LinearLayout btnBeatty = findViewById(R.id.btn_beatty);
         layoutDescBeatty = findViewById(R.id.layout_desc_beatty);
+
 
         btnMontag.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,3 +85,4 @@ public class Adaptacoes extends AppCompatActivity {
         }
     }
 }
+

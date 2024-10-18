@@ -4,8 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5A3E36"
-    tools:context=".Personagem">
+    android:background="@drawable/pag7"
+    tools:context=".Personagem"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="14dp">
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintOverlap" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +50,7 @@
             android:layout_marginTop="16dp">
 
         <LinearLayout
-            android:id="@+id/btn_montag"
+            android:id="@+id/btn_movie1966"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -37,30 +65,33 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/tv_montag"
+                android:id="@+id/tv_movie1966"
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/akshar"
                 android:gravity="center_vertical"
-                android:text="Flme (1966)"
+                android:text="Filme (1966)"
                 android:textAlignment="center"
                 android:textColor="#3e0807"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlCompat" />
 
             <LinearLayout
-                android:id="@+id/layout_desc_montag"
+                android:id="@+id/layout_desc_movie1966"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="gone"
+                tools:ignore="ExtraText">
 
                 <TextView
-                    android:id="@+id/desc_montag"
+                    tools:ignore="HardcodedText,MissingPrefix"
+                    android:id="@+id/desc_movie1966"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="Bombeiro responsável por queimar livros em uma sociedade opressora. Ele começa como um homem conformado com as regras, mas ao longo da trama, passa por uma transformação profunda. Montag tem uma aparência comum, de homem trabalhador, mas sua jornada interior revela uma crescente inquietação. Sua personalidade evolui de obediente e impulsiva para reflexiva e rebelde, questionando as normas e buscando liberdade de pensamento."
+                    android:text="Fahrenheit 451 (1966), dirigido por François Truffaut, é um filme distópico baseado na obra de Ray Bradbury, que retrata uma sociedade onde os livros são proibidos e queimados por "bombeiros". O protagonista, Guy Montag, começa a questionar essa repressão e a buscar a liberdade intelectual, ao ser influenciado por uma jovem que o faz perceber o valor do conhecimento e do pensamento crítico."
                     android:textColor="#3e0807"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -68,7 +99,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/btn_clarisse"
+            android:id="@+id/btn_movie2018"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -82,16 +113,17 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_montag">
 
             <TextView
-                android:id="@+id/tv_clarisse"
+                android:id="@+id/tv_movie2018"
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/akshar"
                 android:gravity="center_vertical"
-                android:text="Filme (2018)"
+                android:text="Filme 2018"
                 android:textAlignment="center"
                 android:textColor="#3e0807"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlCompat" />
 
             <LinearLayout
                 android:id="@+id/layout_desc_clarisse"
@@ -101,11 +133,12 @@
                 android:visibility="gone">
 
                 <TextView
+                    tools:ignore="HardcodedText,MissingPrefix"
                     android:id="@+id/desc_clarisse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="Jovem vizinha de Montag, que representa a curiosidade e o questionamento da vida. Tem aparência delicada e jovem, com traços de pureza e naturalidade. É sonhadora, falante e possui uma visão filosófica sobre o mundo, que contrasta com a sociedade."
+                    android:text="Fahrenheit 451 (2018), dirigido por Ramin Bahrani, é uma adaptação moderna do clássico de Ray Bradbury, ambientada em um futuro distópico onde livros são proibidos e queimados por bombeiros. O protagonista, Montag, começa a questionar o regime opressor e a buscar a verdade após conhecer uma jovem rebelde, confrontando a censura e o controle de informações impostos pelo Estado. A versão atualizada aborda temas como manipulação digital e vigilância, trazendo uma nova perspectiva para a história original."
                     android:textColor="#3e0807"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -113,7 +146,7 @@
         </LinearLayout>
 
         <LinearLayout
-        android:id="@+id/btn_mildred"
+        android:id="@+id/btn_hq"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -127,29 +160,31 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_clarisse">
 
             <TextView
-                android:id="@+id/tv_mildred"
+                android:id="@+id/tv_hq"
                 android:layout_width="268dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/akshar"
                 android:gravity="center_vertical"
-                android:text="História em Quadrinhos"
+                android:text="HQ"
                 android:textAlignment="center"
                 android:textColor="#3e0807"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlCompat" />
 
         <LinearLayout
-            android:id="@+id/layout_desc_mildred"
+            android:id="@+id/layout_desc_movie2018"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:visibility="gone">
 
             <TextView
-                android:id="@+id/desc_mildred"
+                tools:ignore="HardcodedText,MissingPrefix"
+                android:id="@+id/desc_movie2018"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Representa a alienação e a superficialidade, sendo a esposa apática de Montag. Fisicamente, é magra e pálida, muitas vezes doente ou distante. Sua personalidade é passiva, obcecada por tecnologia e emocionalmente desconectada"
+                android:text="A HQ Fahrenheit 451, adaptada por Tim Hamilton com autorização de Ray Bradbury, reinterpreta o clássico distópico em forma de graphic novel, trazendo uma nova dimensão visual à história. Ambientada em um futuro onde livros são proibidos e queimados por "bombeiros", a trama acompanha Montag, um desses agentes, que começa a questionar o sistema opressivo e busca a liberdade intelectual. A arte de Hamilton captura o tom sombrio da narrativa, enfatizando a crítica à censura e ao controle autoritário."
                 android:textColor="#3e0807"
                 android:textSize="16sp"
                 android:padding="8dp" />
@@ -158,7 +193,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btn_beatty"
+        android:id="@+id/btnjogo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -172,7 +207,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_mildred">
 
         <TextView
-            android:id="@+id/tv_beatty"
+            android:id="@+id/tv_jogo"
             android:layout_width="266dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/akshar"
@@ -181,40 +216,27 @@
             android:textAlignment="center"
             android:textColor="#3e0807"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlCompat" />
 
         <LinearLayout
-            android:id="@+id/layout_desc_beatty"
+            android:id="@+id/layout_desc_jogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:visibility="gone">
 
             <TextView
-                android:id="@+id/desc_beatty"
+                android:id="@+id/desc_jogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Principal antagonista, comandante dos bombeiros e defensor da censura. Aparência robusta e imponente, com traços autoritários. Astuto, culto e manipulador, Beatty tem uma personalidade complexa e paradoxal, desprezando o que entende bem."
+                android:text="O jogo Fahrenheit 451, lançado em 1984 para computadores como Apple II e Commodore 64, é uma continuação não oficial do romance de Ray Bradbury. A história se passa após os eventos do livro, com Montag agora como parte de um movimento rebelde que busca preservar o conhecimento proibido. O jogador deve explorar cenários, interagir com personagens e coletar informações para ajudar na resistência contra a opressão estatal. O jogo mantém os temas de censura e liberdade intelectual, oferecendo uma experiência interativa que expande o universo distópico original."
                 android:textColor="#3e0807"
                 android:textSize="16sp"
-                android:padding="8dp" />
+                android:padding="8dp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
-
-    </LinearLayout>
-
-            <Button
-                android:id="@+id/btnback"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Back" />
-
-            <Button
-                android:id="@+id/btnnext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Next" />
-
         </LinearLayout>
-
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

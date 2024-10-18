@@ -1,0 +1,91 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pag8"
+    tools:context=".Personagem"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="14dp">
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="136dp"
+        android:layout_height="711dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:gravity="top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:id="@+id/btnjogo"
+                android:layout_width="300dp"
+                android:layout_height="533dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/borda"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_mildred">
+
+                <TextView
+                    android:id="@+id/tv_jogo"
+                    android:layout_width="266dp"
+                    android:layout_height="52dp"
+                    android:fontFamily="@font/akshar"
+                    android:gravity="center_vertical"
+                    android:text="AUTOR"
+                    android:textAlignment="center"
+                    android:textColor="#3e0807"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/tv_jogo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="444dp"
+                    android:fontFamily="@font/akshar"
+                    android:gravity="center_vertical"
+                    android:text="Ray Bradbury, nascido em 1920 em Illinois, foi um renomado escritor norte-americano conhecido por suas obras de ficção científica, especialmente o clássico distópico Fahrenheit 451. Com uma trajetória marcada pela paixão pela escrita, ele publicou seu primeiro conto aos 18 anos e, em 1950, ganhou notoriedade com As Crônicas Marcianas. Bradbury não teve formação universitária, mas se destacou como um dos principais autores de sua geração. Fahrenheit 451 foi adaptado para o cinema em 1966 por François Truffaut e novamente em 2018, embora a versão mais antiga seja amplamente considerada superior. Ele faleceu em 2012, aos 93 anos."
+                    android:textAlignment="center"
+                    android:textColor="#3e0807"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

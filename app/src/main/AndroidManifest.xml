@@ -18,6 +18,8 @@
         <activity android:name=".Adaptacoes"/>
         <activity android:name=".Chamado"/>
         <activity android:name=".Personagem"/>
+        <activity android:name="Fim"/>
+        <activity android:name="Autor"/>
 
         <activity
             android:name=".MainActivity"
